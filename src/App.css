@@ -1,0 +1,225 @@
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+.navbar {
+  height: 30px;
+  width: 100%;
+}
+
+
+
+.logo {
+  display: inline;
+  justify-content: center;
+  color: rgb(25, 23, 23);
+  font-size: 35px;
+  margin: 0 20px;
+  height: 50px;
+  width: 30px;
+
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  background-color: #e3dd84;
+  justify-content: center;
+}
+
+li {
+  display: inline-flex;
+}
+
+li a {
+  display: block;
+  color: rgb(17, 12, 12);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to on hover */
+li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.button {
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: blue;
+  padding: 13px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  justify-content: flex-end;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(79, 78, 78);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgb(252, 252, 252);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.textarea {
+  margin: 30px 34px;
+  font-size: 30PX;
+  display: flex;
+  align-items: center;
+}
+
+.toggel {
+  float: right;
+  margin: 9px;
+}
+
+.alert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(7, 173, 162);
+  color: rgb(0, 0, 0);
+}
+
+.footer {
+  margin: 20px 50px;
+}
+
+
+
+/* about */
+.accord{
+  max-width: 800px;
+}
+
+.accord .contentBx{
+  position: relative;
+  margin: 10px 20px;
+  border: 2px solid rgba(69, 81, 82, 0.708);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.accord .contentBx .lable{
+  position: relative;
+  padding: 10px;
+  background: rgba(0, 0, 255, 0.427);
+  color: white;
+}
+
+.content {
+  padding: 12px 12px;
+}
+
+.about{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
